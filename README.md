@@ -19,6 +19,15 @@ For each of the models above, calculate the following evaluation metrics:
 5. F1 Score
 6. Matthews Correlation Coefficient (MCC Score)
 
+| ML Model Name               | Accuracy | AUC | Precision | Recall | F1 | MCC |
+|------------------------------|----------|-----|-----------|--------|----|-----|
+| Logistic Regression           |          |     |           |        |    |     |
+| Decision Tree                |          |     |           |        |    |     |
+| kNN                          |          |     |           |        |    |     |
+| Naive Bayes                 |          |     |           |        |    |     |
+| Random Forest (Ensemble)    |          |     |           |        |    |     |
+| XGBoost (Ensemble)          |          |     |           |        |    |     |
+
 ## Model Performance Observations
 Add your observations on the performance of each model on the chosen dataset:
 
