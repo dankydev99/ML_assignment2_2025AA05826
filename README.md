@@ -63,6 +63,15 @@ Age, Height, Weight, FCVC, NCP, CH2O, FAF, TUE
 | Random Forest (Ensemble) | Delivered stable and robust predictions with excellent probability estimates. |
 | XGBoost (Ensemble) | Best-performing model, effectively capturing complex nonlinear patterns with superior generalization. |
 
+| ML Model Name | Observation about model performance |
+|--------------|--------------------------------------|
+| **Logistic Regression** | Delivered strong performance despite being a linear classifier, suggesting that the obesity categories exhibit substantial linear separability after one-hot encoding and feature scaling. The high AUC further indicates well-ranked class probabilities. |
+| **Decision Tree** | Achieved excellent accuracy by learning nonlinear decision boundaries and capturing feature interactions. Its performance improvement over Logistic Regression highlights the presence of nonlinear relationships among physiological and behavioral attributes. |
+| **KNN** | Showed comparatively lower performance, likely due to the curse of dimensionality introduced by one-hot encoding. In high-dimensional sparse spaces, distance metrics become less discriminative, reducing classification effectiveness. |
+| **Naive Bayes** | Performed poorly as its core assumptions — conditional independence of features and Gaussian-distributed numeric variables — are strongly violated. The dataset contains correlated features such as Height, Weight, and lifestyle factors, degrading predictive power. |
+| **Random Forest (Ensemble)** | Produced stable and robust predictions by averaging multiple trees, reducing variance and overfitting risk. The very high AUC suggests well-calibrated probability estimates and strong class separability. |
+| **XGBoost (Ensemble)** | Emerged as the best-performing model by leveraging boosting, sequentially correcting errors from previous trees. Its superior MCC and F1 score indicate balanced multiclass predictions and excellent generalization. |
+
 ---
 
 ## ✅ Conclusion
