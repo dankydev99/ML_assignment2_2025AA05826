@@ -56,15 +56,6 @@ Age, Height, Weight, FCVC, NCP, CH2O, FAF, TUE
 
 | ML Model Name | Observation about model performance |
 |--------------|--------------------------------------|
-| Logistic Regression | Achieved strong performance despite being a linear model, indicating reasonable linear separability after feature transformation. |
-| Decision Tree | Performed very well by capturing nonlinear relationships and feature interactions. |
-| KNN | Lower performance likely due to high dimensionality from one-hot encoding affecting distance calculations. |
-| Naive Bayes | Poor results due to violation of independence and Gaussian distribution assumptions. |
-| Random Forest (Ensemble) | Delivered stable and robust predictions with excellent probability estimates. |
-| XGBoost (Ensemble) | Best-performing model, effectively capturing complex nonlinear patterns with superior generalization. |
-
-| ML Model Name | Observation about model performance |
-|--------------|--------------------------------------|
 | **Logistic Regression** | Delivered strong performance despite being a linear classifier, suggesting that the obesity categories exhibit substantial linear separability after one-hot encoding and feature scaling. The high AUC further indicates well-ranked class probabilities. |
 | **Decision Tree** | Achieved excellent accuracy by learning nonlinear decision boundaries and capturing feature interactions. Its performance improvement over Logistic Regression highlights the presence of nonlinear relationships among physiological and behavioral attributes. |
 | **KNN** | Showed comparatively lower performance, likely due to the curse of dimensionality introduced by one-hot encoding. In high-dimensional sparse spaces, distance metrics become less discriminative, reducing classification effectiveness. |
